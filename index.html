@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            border: thick double black;
+            margin: 50px 250px;
+            background-color: RGB(223, 207, 190)
+        }
+
+        h3 {
+            color: rgb(47, 0, 255);
+        }
+
+        .left {
+            flex: 1;
+            text-align: end;
+            padding: 3%;
+            background-color: white;
+
+        }
+
+        .right {
+            flex: 2;
+            padding: 2%;
+            padding-right: 25%;
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body class="container">
+    <div class="left">
+        <p>cameroncarlg@gmail.com</p>
+        <p>github.com/cameroncarlg</p>
+        <p>(337)255-9986</p>
+        <h3 style="color: black">Address</h3>
+        <p>305 Asbury Rd.</p>
+        <p>Lafayette, Louisiana</p>
+        <p>70503</p>
+        <div>
+            <br>
+            <br>
+            <p>Website visitor count: </p>
+            <div class="website-counter">asdf</div>
+            <script>
+                var counterContainer = document.querySelector(".website-counter");
+                var visitCount = localStorage.getItem("page_view");
+        
+                // Check if page_view entry is present
+                if (visitCount) {
+                visitCount = Number(visitCount) + 1;
+                localStorage.setItem("page_view", visitCount);
+                } else {
+                visitCount = 1;
+                localStorage.setItem("page_view", 1);
+                }
+                counterContainer.innerHTML = visitCount;
+                console.log(visitCount)
+                console.log(counterContainer)
+            </script>
+        </div>
+        
+
+    </div>
+    <div class="right">
+        <div>
+            <h1 style="color: rgb(47, 0, 255)">Cameron Guilbeau</h1>
+            <h2 style="padding-bottom: 20px;">Software Developer</h3> 
+        </div>
+        <div>
+            <h2>Education</h2>
+            <h3>University of Louisiana at Lafayette - Lafayette, Louisiana, 2023</h3>
+                <div>
+                    <ul>
+                        <li><em>Bachelors of Science in Computer Science</em></li>
+                        <li><em>GPA - 3.5</em></li>
+                    </ul>
+                </div>
+        </div>
+        <div>
+            <h2>Personal Projects</h2>
+            <h3>Terraform Development Environment,<em> Terraform</em>, 2023</h3>
+                <ul>
+                    <li>Utilizing Terraform and AWS, created a personalized development
+                        environment that can be accessed via VS Code and SSH. The environment is contained within a Virtual Private Cloud (VPC) on an
+                        EC2 instance with its own route table, subnet, and security group</li>
+                </ul>
+            <h3>Serverless Utilities App,<em> AWS</em>, 2022</h3>
+                <ul>
+                    <li>Serverless mobile app able to send, store, and update user submitted
+                        coordinates for a utilities company. The backend was made with
+                        AWS Lambda functions while the frontend utilized React Native</li>
+                </ul>
+            <h3>Cloud Resume Website, <em> HTML</em>, 2023</h3>
+                <ul>
+                    <li>
+                        Tasdfasdfasdfasdfasdfafds
+                    </li>
+                </ul>
+            <h3>Golang Scanner,<em> Go</em>, 2021</h3>
+                <ul>
+                    <li>Interpreter/scanner written in the Go programming langauge that will tokenize, parse, and evaluate a text document consisting of an artificial "Let" language</li>
+                </ul>
+        </div>
+        <div>
+            <h2>Experience</h2>
+            <h3>CGI technical presentation, <em>backend developer</em>, 2022 - 23</h3>
+                <ul>
+                    <li>Spent six months on a team building out a fullstack application utilizing AWS lambda functions on DynamoDB. This was then presented to a group of senior tech managers</li>
+                </ul>
+            <h3>CAPE (Cajun Advanced Picosatellite Experiment), 2020 - 22</h3>
+                <ul>
+                    <li>Student-run organization which develops and builds picosatellites along with a host of other aerospace and mission related systems such as weather balloons and sensor buoys</li>
+                </ul>
+            <h3>Barnes & Noble, <em>Barista</em>, 2019 - 21</h3>
+                <ul>
+                    <li>Worked on customer service soft skills such as building a relationship with the frequenting customers or upselling our latest promotions</li>
+                </ul>
+        </div>
+        <div>
+            <h2>Skills</h2>
+            <table>
+                <tr>
+                    <th>Java</th>
+                    <th>AWS</th>
+                    <th>ReactJS</th>
+                </tr>
+                <tr>
+                    <th>Linux</th>
+                    <th>SQL</th>
+                    <th>Go</th>
+                </tr>
+                <tr>
+                    <th>C/C++</th>
+                    <th>Python</th>
+                    <th>Git</th>
+                </tr>
+                <tr>
+                    <th>Bash</th>
+                    <th>DynamoDB</th>
+                    <th>ReactJS</th>
+                </tr>
+                <tr>
+                    <th>LaTex</th>
+                    <th>Agile</th>
+                    <th>Waterfall</th>
+                </tr>
+                <tr>
+                    <th>OOP</th>
+                    <th>ML models</th>
+                    <th>EC2</th>
+                </tr>
+                <tr>
+                    <th>MongoDB</th>
+                    <th>Docker</th>
+                    <th>HTML</th>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <th>Javascript</th>
+                </tr>
+            </table>
+        </div>
+     
+        
+    </div>
+</body>
+</html>
