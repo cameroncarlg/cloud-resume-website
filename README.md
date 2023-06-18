@@ -6,7 +6,7 @@ What is the Cloud Resume Challenge you might be wondering? [The Cloud Resume Cha
 
 ## Architecture
 
-[Architecture](/diagram/cameroncarl-resume-website.com.png)
+![Architecture](/diagram/cameroncarl-resume-website.com.png)
 
 ## Services Used:
 
