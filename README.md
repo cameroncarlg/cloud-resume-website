@@ -18,4 +18,4 @@ What is the Cloud Resume Challenge you might be wondering? [The Cloud Resume Cha
 - GitHub Actions
 - Terraform
 
-[Live Demo](cameroncarl-resume-website.com)
+[Live Demo](https://cameroncarl-resume-website.com/)
