@@ -1,244 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cameron Guilbeau - Software Developer</title>
-  <style>
-    body {
-      font-family: 'Helvetica';
-      font-size: large;
-      margin: 0;
-      padding: 0;
-      background-color: #F7F8FA;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      border: 2px solid #E4E7EB;
-      margin: 20px;
-      background: linear-gradient(135deg, black, purple, #FF7857, #FF5C4B, #FF4440);
-      background-blend-mode: overlay;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .left,
-    .right {
-      padding: 3%;
-      border: 1px solid #E4E7EB;
-      background-color: rgba(255, 255, 255, 0.9);
-    }
-
-    h1 {
-      color: #333366;
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    h2 {
-      color: #444;
-      margin: 0;
-      font-size: 1.5rem;
-    }
-
-    h3 {
-      color: #333366;
-      font-size: 1.2rem;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    li {
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    th,
-    td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .website-counter {
-      font-size: 1.2rem;
-      color: #555;
-    }
-
-    @media screen and (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        margin: 50px 100px;
-      }
-
-      .left {
-        flex: 1;
-      }
-
-      .right {
-        flex: 2;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <div class="left">
-      <h3>Contacts</h3>
-      <p style="color: #444;">cameroncarlg@gmail.com</p>
-      <p style="color: #444;">github.com/cameroncarlg</p>
-      <p style="color: #444;">(337)255-9986</p>
-      <div>
-        <br>
-        <br>
-        <h3 style="color: #444;">Website visitor count:</h3>
-        <div class="website-counter">Loading...</div>
-        <script>
-          var counter = document.querySelector(".website-counter");
-          async function updateCounter() {
-            let response = await fetch("https://u7srqu2zgiearbgpx4ocxumanq0ximic.lambda-url.us-east-1.on.aws/")
-            let data = await response.json()
-            counter.innerHTML = `${data}`;
-          }
-          updateCounter();
-        </script>
-      </div>
-    </div>
-    <div class="right">
-      <div>
-        <h1>Cameron Guilbeau</h1>
-        <h2>Software Developer</h2>
-        <br>
-        <br>
-      </div>
-      <div>
-        <h2>Experience</h2>
-        <h3>Boeing, <em>Database Administrator</em>, 2023 - Present</h3>
-        <ul>
-          <li>Assisted with the maintinance, modeling, and creation of varius databases. In addition to
-            database administration, was responsible for developing frontend code through which the data could
-            be viewed
-          </li>
-        </ul>
-        <h3>CAPE (Cajun Advanced Picosatellite Experiment), 2020 - 22</h3>
-        <ul>
-          <li>Student-run organization which develops and builds picosatellites along with a host of other aerospace and
-            mission related systems such as weather balloons and sensor buoys</li>
-        </ul>
-      </div>
-      <br>
-      <div>
-        <h2>Education</h2>
-        <h3>University of Louisiana at Lafayette - Lafayette, Louisiana, 2023</h3>
-        <ul>
-          <li><em>Bachelors of Science in Computer Science</em></li>
-          <li><em>Computer Engineering Concentation</em></li>
-        </ul>
-        <br>
-      </div>
-      <div>
-        <h2>Personal Projects</h2>
-        <h3>Cloud Resume Website, <em> HTML</em>, 2023</h3>
-        <ul>
-          <li>
-            This website you're viewing right now! This is my cloud-based resume website hosted on an S3 bucket and
-            distributed via CloudFront.
-            It contains an interactive view counter made with AWS Lambda and DynamoDB. Utilizes Terraform for IaC and
-            GitHub Actions for CI/CD
-          </li>
-        </ul>
-        <h3>Terraform Development Environment,<em> Terraform</em>, 2023</h3>
-        <ul>
-          <li>Utilizing Terraform and AWS, created a personalized development
-            environment that can be accessed via VS Code and SSH. The environment is contained within a Virtual Private
-            Cloud (VPC) on an
-            EC2 instance with its own route table, subnet, and security group</li>
-        </ul>
-        <h3>Serverless Utilities App,<em> AWS</em>, 2022</h3>
-        <ul>
-          <li>Serverless mobile app able to send, store, and update user submitted
-            coordinates for a utilities company. The backend was made with
-            AWS Lambda functions while the frontend utilized React Native</li>
-        </ul>
-
-        <h3>Golang Scanner,<em> Go</em>, 2021</h3>
-        <ul>
-          <li>Interpreter/scanner written in the Go programming langauge that will tokenize, parse, and evaluate a text
-            document consisting of an artificial "Let" language</li>
-        </ul>
-      </div>
-      <br>
-
-      <br>
-      <div>
-        <h2>Skills</h2>
-        <table>
-          <tr>
-            <th>Java</th>
-            <th>AWS</th>
-            <th>ReactJS</th>
-          </tr>
-          <tr>
-            <th>Linux</th>
-            <th>SQL</th>
-            <th>Go</th>
-          </tr>
-          <tr>
-            <th>C/C++</th>
-            <th>Python</th>
-            <th>Git</th>
-          </tr>
-          <tr>
-            <th>Bash</th>
-            <th>DynamoDB</th>
-            <th>ReactJS</th>
-          </tr>
-          <tr>
-            <th>LaTex</th>
-            <th>Agile</th>
-            <th>Waterfall</th>
-          </tr>
-          <tr>
-            <th>OOP</th>
-            <th>ML models</th>
-            <th>EC2</th>
-          </tr>
-          <tr>
-            <th>MongoDB</th>
-            <th>Docker</th>
-            <th>HTML</th>
-          </tr>
-          <tr>
-            <th>CSS</th>
-            <th>Javascript</th>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</body>
-
-</html>
-=======
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -343,6 +104,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="container">
       <div class="left">
@@ -350,10 +112,6 @@
         <p style="color: #444">cameroncarlg@gmail.com</p>
         <p style="color: #444">github.com/cameroncarlg</p>
         <p style="color: #444">(337)255-9986</p>
-        <h3>Address</h3>
-        <p style="color: #444">305 Asbury Rd.</p>
-        <p style="color: #444">Lafayette, Louisiana</p>
-        <p style="color: #444">70503</p>
         <div>
           <br />
           <br />
@@ -380,6 +138,27 @@
           <br />
         </div>
         <div>
+          <h2>Experience</h2>
+          <h3>Boeing, <em>Database Administrator</em>, 2023 - Present</h3>
+          <ul>
+            <li>
+              Assisted with the maintinance, modeling, and creation of varius
+              databases. In addition to database administration, was responsible
+              for developing frontend code through which the data could be
+              viewed
+            </li>
+          </ul>
+          <h3>CAPE (Cajun Advanced Picosatellite Experiment), 2020 - 22</h3>
+          <ul>
+            <li>
+              Student-run organization which develops and builds picosatellites
+              along with a host of other aerospace and mission related systems
+              such as weather balloons and sensor buoys
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div>
           <h2>Education</h2>
           <h3>
             University of Louisiana at Lafayette - Lafayette, Louisiana, 2023
@@ -387,7 +166,6 @@
           <ul>
             <li><em>Bachelors of Science in Computer Science</em></li>
             <li><em>Computer Engineering Concentation</em></li>
-            <li><em>GPA - 3.5</em></li>
           </ul>
           <br />
         </div>
@@ -433,35 +211,7 @@
           </ul>
         </div>
         <br />
-        <div>
-          <h2>Experience</h2>
-          <h3>
-            CGI technical presentation, <em>backend developer</em>, 2022 - 23
-          </h3>
-          <ul>
-            <li>
-              Spent six months on a team building out a fullstack application
-              utilizing AWS lambda functions on DynamoDB. This was then
-              presented to a group of senior tech managers
-            </li>
-          </ul>
-          <h3>CAPE (Cajun Advanced Picosatellite Experiment), 2020 - 22</h3>
-          <ul>
-            <li>
-              Student-run organization which develops and builds picosatellites
-              along with a host of other aerospace and mission related systems
-              such as weather balloons and sensor buoys
-            </li>
-          </ul>
-          <h3>Barnes & Noble, <em>Barista</em>, 2019 - 21</h3>
-          <ul>
-            <li>
-              Worked on customer service soft skills such as building a
-              relationship with the frequenting customers or upselling our
-              latest promotions
-            </li>
-          </ul>
-        </div>
+
         <br />
         <div>
           <h2>Skills</h2>
@@ -511,4 +261,3 @@
     </div>
   </body>
 </html>
->>>>>>> 9dba15a (new lambda function)
