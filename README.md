@@ -1,6 +1,6 @@
 # AWS Cloud Resume Challenge
 
-This is my attempt at taking on the Cloud Resume Challenge using AWS! 
+This is my attempt at taking on the Cloud Resume Challenge using AWS!
 
 What is the Cloud Resume Challenge you might be wondering? [The Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) is a multi-step resume project which helps build and demonstrate skills fundamental to pursuing a career in cloud computing. Each task is designed to slowly ease you into the vast amount of compute services these cloud vendors provide.
 
@@ -18,4 +18,4 @@ What is the Cloud Resume Challenge you might be wondering? [The Cloud Resume Cha
 - GitHub Actions
 - Terraform
 
-[Live Demo](heymyresume.com)
+[Live Demo](https://heymyresume.com)
