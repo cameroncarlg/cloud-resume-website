@@ -18,4 +18,4 @@ What is the Cloud Resume Challenge you might be wondering? [The Cloud Resume Cha
 - GitHub Actions
 - Terraform
 
-[Live Demo](https://my-portfolio-resume-bucket.s3.us-east-1.amazonaws.com/cloud-resume-website/website/index.html)
+[Live Demo](heymyresume.com)
