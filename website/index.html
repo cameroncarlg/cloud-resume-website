@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -121,7 +121,7 @@
             var counter = document.querySelector(".website-counter");
             async function updateCounter() {
               let response = await fetch(
-                "https://wjr6mtpaaeiyoxonulhsxobrae0rhqwc.lambda-url.us-west-2.on.aws/"
+                "https://wjr6mtpaaeiyoxonulhsxobrae0rhqwc.lambda-url.us-west-2.on.aws/",
               );
               let data = await response.json();
               counter.innerHTML = `${data}`;
@@ -133,7 +133,7 @@
       <div class="right">
         <div>
           <h1>Cameron Guilbeau</h1>
-          <h2>Software Developer</h2>
+          <h2>Software Engineer</h2>
           <br />
           <br />
         </div>
